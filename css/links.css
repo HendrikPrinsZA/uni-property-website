@@ -1,0 +1,66 @@
+#main_menu
+{
+	position: relative;
+	z-index:100;
+	left:auto;
+	width:100%;
+}
+
+#menu {
+  top: 0;
+  left: 0;
+}
+#menu, #menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#menu li {
+  float: left;
+  background: #82DFFE;
+}
+#menu a {
+  display: block;
+  padding: 5px;
+  width: 130px;
+}
+#menu li ul {
+  position: absolute;
+  left: -999em;
+  width: 140px;
+}
+#menu li:hover ul, #menu li ul:hover {
+  left:auto;
+}
+
+.stars div a {
+  background: transparent url(sprite_rate.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 23px;
+  width: 12px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+/* The right part of the star (not clicked or mouse overed) */
+.stars a.rating-right {
+  background-position: 0 -23px;
+  padding-right: 6px;
+}
+/* The left part of the star mouse overed */
+.stars a.rating-over {
+  background-position: 0 -46px;
+}
+/* The right part of the star mouse overed */
+.stars a.rating-over.rating-right {
+  background-position: 0 -69px;
+}
+/* The left part of the star selected */
+.stars a.rating {
+  background-position: 0 -92px;
+}
+/* 
+The right part of the star selected 
+*/
+.stars a.rating.rating-right {
+  background-position: 0 -115px;
+}
