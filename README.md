@@ -9,3 +9,6 @@ Create a website for property listings. The site should have the following funct
 - Javascript
 - MySQL
 - Ruby Generated Code
+
+### Docs
+- [User Guide](documentation.pdf)
